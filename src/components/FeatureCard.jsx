@@ -1,15 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { DivideIcon as LucideIcon } from 'lucide-react';
 
-interface FeatureCardProps {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-  gradient: string;
-}
-
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, description, gradient }) => {
+const FeatureCard = ({ icon: Icon, title, description, gradient }) => {
   return (
     <motion.div
       whileHover={{ 

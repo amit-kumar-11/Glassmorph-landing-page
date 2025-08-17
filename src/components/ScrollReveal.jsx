@@ -2,14 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-interface ScrollRevealProps {
-  children: React.ReactNode;
-  direction?: 'up' | 'down' | 'left' | 'right';
-  delay?: number;
-  className?: string;
-}
-
-const ScrollReveal: React.FC<ScrollRevealProps> = ({ 
+const ScrollReveal = ({ 
   children, 
   direction = 'up', 
   delay = 0, 

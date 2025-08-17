@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
 import { ArrowDown } from 'lucide-react';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const fadeInUp = {
